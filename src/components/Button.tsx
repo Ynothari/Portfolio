@@ -24,10 +24,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-purple focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none hover:scale-105 active:scale-95";
+    const baseStyles = "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-purple focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none hover:scale-105 active:scale-95";
 
     const variants = {
-      default: "bg-neon-purple text-white hover:bg-neon-purple/90 shadow-[0_0_15px_rgba(139,92,246,0.3)]",
+      default: "bg-neon-purple text-white hover:bg-neon-purple/90 shadow-[0_0_20px_rgba(139,92,246,0.3)]",
       outline: "border border-neon-purple bg-transparent text-neon-purple hover:bg-neon-purple/10",
       ghost: "bg-transparent text-neon-purple hover:bg-neon-purple/10",
     };

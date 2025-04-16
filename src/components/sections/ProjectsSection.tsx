@@ -1,6 +1,4 @@
-
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/Button";
 import { FaGithub } from "react-icons/fa";
 
@@ -47,7 +45,7 @@ const projects: Project[] = [
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <motion.div 
-      className="project-card"
+      className="project-card transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-neon-purple/20"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -61,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         />
       </div>
       <div className="p-6 space-y-4">
-        <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+        <h3 className="text-xl font-semibold text-white drop-shadow-sm">{project.title}</h3>
         
         <div className="flex flex-wrap gap-2 mb-3">
           {project.technologies.map((tech) => (
@@ -89,18 +87,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
 };
 
 const ProjectsSection = () => {
-  const [filter, setFilter] = useState<string>("all");
-  const categories = ["all", "AI", "DevOps", "Web"];
-  
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => project.category.includes(filter));
-    
   return (
-    <section id="projects" className="py-20 bg-dark-secondary/30">
+    <section id="projects" className="py-32 bg-dark-secondary/30">
       <div className="section-container">
         <motion.h2 
-          className="section-title text-center"
+          className="section-title text-center drop-shadow-lg mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -109,38 +100,16 @@ const ProjectsSection = () => {
           Projects
         </motion.h2>
         
-        <div className="flex justify-center mb-12">
-          <div className="flex flex-wrap gap-2 p-1 glass-card">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setFilter(category)}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                  filter === category
-                    ? "bg-neon-purple text-white"
-                    : "bg-transparent text-gray-400 hover:text-white"
-                }`}
-              >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            ))}
-          </div>
-        </div>
-        
-        <AnimatePresence mode="wait">
-          <motion.div 
-            key={filter}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </motion.div>
-        </AnimatePresence>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </motion.div>
       </div>
     </section>
   );

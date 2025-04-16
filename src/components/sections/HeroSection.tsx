@@ -58,7 +58,7 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"
+            className="text-lg md:text-xl font-semibold text-[#3B3B3B] drop-shadow-sm max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}

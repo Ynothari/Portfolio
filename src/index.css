@@ -59,8 +59,8 @@
 
   body {
     @apply bg-dark text-foreground font-inter antialiased;
-    background: linear-gradient(to bottom, #0F172A, #1E293B);
-    background-image: radial-gradient(rgba(139, 92, 246, 0.1) 2px, transparent 2px);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    background-image: radial-gradient(rgba(139, 92, 246, 0.15) 2px, transparent 2px);
     background-size: 30px 30px;
     background-attachment: fixed;
   }
@@ -96,7 +96,7 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent;
+    @apply text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent drop-shadow-lg;
   }
 
   .project-card {
