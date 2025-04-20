@@ -59,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         />
       </div>
       <div className="p-6 space-y-4">
-        <h3 className="text-xl font-semibold text-white drop-shadow-sm">{project.title}</h3>
+        <h3 className="text-xl font-semibold text-black drop-shadow-sm">{project.title}</h3>
         
         <div className="flex flex-wrap gap-2 mb-3">
           {project.technologies.map((tech) => (
@@ -69,7 +69,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           ))}
         </div>
         
-        <p className="text-gray-400 text-sm">{project.description}</p>
+        <p className="text-gray-800 text-sm">{project.description}</p>
         
         <div className="pt-4">
           <Button 

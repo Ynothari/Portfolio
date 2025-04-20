@@ -50,7 +50,7 @@ const HeroSection = () => {
           className="space-y-6"
         >
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-purple-500 via-sky-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg"
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
           >
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-lg md:text-xl font-semibold text-[#3B3B3B] drop-shadow-sm max-w-3xl mx-auto"
+            className="text-lg md:text-xl font-semibold text-neon-purple drop-shadow-sm max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}

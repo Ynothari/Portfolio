@@ -70,17 +70,17 @@ const AchievementCard = ({ achievement, index }: { achievement: Achievement; ind
       {/* Achievement content */}
       <div className="glass-card p-6 flex-1">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="text-xl font-semibold text-white">{achievement.title}</h3>
+          <h3 className="text-xl font-semibold text-black">{achievement.title}</h3>
           <div className="bg-yellow-500/20 px-3 py-1 rounded-full text-yellow-300 text-sm font-semibold">
             {achievement.award}
           </div>
         </div>
         
-        <div className="text-sm text-gray-400 mb-3">
+        <div className="text-sm text-gray-500 mb-3">
           {achievement.organization} • {achievement.date}
         </div>
         
-        <p className="text-gray-300">
+        <p className="text-gray-500">
           {achievement.description}
         </p>
       </div>

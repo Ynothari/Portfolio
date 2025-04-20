@@ -91,7 +91,7 @@ const SkillsSection = () => {
             <div className="pt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
                 <h3 className="text-lg font-medium text-neon-purple mb-4">Programming</h3>
-                <ul className="space-y-2 text-gray-400">
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neon-purple"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                     Object-Oriented Programming
@@ -109,7 +109,7 @@ const SkillsSection = () => {
               
               <div>
                 <h3 className="text-lg font-medium text-neon-blue mb-4">DevOps</h3>
-                <ul className="space-y-2 text-gray-400">
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neon-blue"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                     CI/CD Pipelines
@@ -127,7 +127,7 @@ const SkillsSection = () => {
               
               <div>
                 <h3 className="text-lg font-medium text-neon-green mb-4">Cloud</h3>
-                <ul className="space-y-2 text-gray-400">
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neon-green"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
                     AWS Services (EC2, S3)

@@ -69,8 +69,8 @@ const CourseCard = ({ course, index }: { course: Course; index: number }) => {
       <div className="h-12 w-12 bg-neon-purple/20 rounded-lg flex items-center justify-center mb-4">
         {course.icon}
       </div>
-      <h3 className="text-xl font-semibold text-white mb-2">{course.title}</h3>
-      <p className="text-gray-400 text-sm">{course.description}</p>
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">{course.title}</h3>
+      <p className="text-gray-500 text-sm">{course.description}</p>
     </motion.div>
   );
 };

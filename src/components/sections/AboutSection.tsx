@@ -46,12 +46,17 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <p className="text-lg text-gray-300">
-              Hello! I'm <span className="text-neon-purple font-semibold">Hari Krishnan R</span>, a passionate B.Tech AI & DS student (2024–2027) with a deep interest in artificial intelligence, DevOps practices, and cloud technologies.
+            <p className="text-lg text-gray-800">
+              Hello! I'm <span className="text-neon-purple font-semibold">Hari Krishnan R</span>, passionate about learning and exploring the technology.
+
+            I'm currently building my skills in DevOps practices, and Cloud Computing.
+
+            As a dedicated learner, I'm always curious and eager to explore new tools, frameworks, and methodologies. My goal is to grow into roles like DevOps Engineer, or Cloud Architect.
+
             </p>
             
-            <p className="text-gray-400">
-              My journey began with a curiosity about how technology can solve real-world problems. This led me to explore various domains, from building voice assistants to implementing DevOps pipelines and cloud solutions.
+            <p className="text-gray-800">
+            I'm excited about the journey ahead and open to opportunities where I can keep growing, collaborating, and building impactful solutions.
             </p>
             
             <h3 className="text-xl font-semibold text-white">My Journey</h3>
@@ -68,7 +73,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-white">Early Education</h4>
-                  <p className="text-sm text-gray-400">Where my interest in technology began, laying the foundation for my future endeavors.</p>
+                  <p className="text-sm text-gray-500">Where my interest in technology began, laying the foundation for my future endeavors.</p>
                 </div>
               </div>
               
@@ -83,7 +88,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-white">AI Exploration</h4>
-                  <p className="text-sm text-gray-400">Discovering the fascinating world of artificial intelligence and its applications.</p>
+                  <p className="text-sm text-gray-500">Discovering the fascinating world of artificial intelligence and its applications.</p>
                 </div>
               </div>
               
@@ -100,7 +105,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-white">Project Development</h4>
-                  <p className="text-sm text-gray-400">Creating meaningful projects that solve real problems and boost my skills.</p>
+                  <p className="text-sm text-gray-500">Creating meaningful projects that solve real problems and boost my skills.</p>
                 </div>
               </div>
               
@@ -116,7 +121,7 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-white">DevOps Journey</h4>
-                  <p className="text-sm text-gray-400">Learning about automation, CI/CD pipelines, and infrastructure as code.</p>
+                  <p className="text-sm text-gray-500">Learning about automation, CI/CD pipelines, and infrastructure as code.</p>
                 </div>
               </div>
             </div>

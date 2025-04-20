@@ -46,7 +46,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-neon-purple transition-colors text-sm"
+                className="text-black hover:text-neon-purple transition-colors text-sm"
               >
                 {link.label}
               </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-gray-300 hover:text-neon-purple transition-colors py-2 px-4"
+                  className="text-black hover:text-neon-purple transition-colors py-2 px-4"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}

@@ -87,7 +87,7 @@ const ContactSection = () => {
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-500 mb-1">
                   Name
                 </label>
                 <input
@@ -102,7 +102,7 @@ const ContactSection = () => {
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-500 mb-1">
                   Email
                 </label>
                 <input
@@ -117,7 +117,7 @@ const ContactSection = () => {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-500 mb-1">
                   Message
                 </label>
                 <textarea
@@ -174,7 +174,7 @@ const ContactSection = () => {
             </div>
             
             <div className="mt-12">
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 Feel free to reach out for collaboration opportunities, project inquiries, or just to connect!
               </p>
             </div>
